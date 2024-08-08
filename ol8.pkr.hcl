@@ -1,5 +1,5 @@
  
-source "qemu" "rhel" {
+source "qemu" "ol8" {
   iso_url            = "file:///mnt/c/Users/hanab/Desktop/Stage%20Vermeg/LinuxOs/OracleLinux-R8-U10-x86_64-dvd.iso"
   iso_checksum="7676a80eeaafa16903eebb2abba147a3afe230b130cc066d56fdd6854d8da900"
   http_directory="./http"
@@ -28,6 +28,6 @@ boot_command = [
 }
 
 build {
-  sources = ["source.qemu.rhel"]
+  sources = ["source.qemu.ol8"]
 
 }
